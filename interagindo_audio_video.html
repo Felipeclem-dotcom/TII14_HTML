@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interagindo com audio e video</title>
+  </head>
+  <body>
+    <h1>Video e audio</h1>
+    <!-- O controlsatributo adiciona controles de áudio, como reprodução, pausa e volume. O <source>elemento permite que você especifique áudio alternativo arquivos que o navegador pode escolher. O navegador utilizará o primeiro formato reconhecido. O texto entre o <audio>e </audio>tags só serão exibidas em navegadores que não apoiar o <audio>elemento. -->
+    <audio controls id="audio">
+      <source src="mídia/metalica_nothing.mp3" type="audio/mpeg" />
+      Seu navegador não suporta esse elemento
+    </audio>
+
+    <section>
+        <!-- O controls atributo adiciona controles de vídeo, como reprodução, pausa e volume.O <source>elemento permite que você especifique vídeo alternativo arquivos que o navegador pode escolher. O navegador utilizará o primeiro formato reconhecido. O texto entre o <video>e </video>tags só serão exibidas em navegadores que não apoiar o <video>elemento. -->
+      <p>Veja o video a seguir:</p>
+      <video controls>
+        <source src="mídia/london.mp4" type="video/mp4" />
+        Seu navegador não suporta esse elemento
+      </video>
+
+      <video controls>
+        <source src="mídia/pink-floyd.mp4" type="video/mp4" />
+        Seu navegador não suporta esse elemento
+      </video>
+    </section>
+
+    <video controls>
+      <!-- Legenda tem todos esses atributos ai, é só copiar não tem segredo -->
+        <source src="mídia/pink-floyd.mp4" type="video/mp4" />
+      <track
+        kind="subtitles"
+        srclang="pt-br"
+        src="mídia/legenda-ptbr.vtt"
+        label="Porutuguês Brasil"
+        default
+      />
+      <track
+        kind="subtitles"
+        srclang="en"
+        src="mídia/legenda-en.vtt"
+        label="Inglês"
+        default
+      />
+    </video>
+
+    <main>
+        <p>Existe outra forma de inserir video sem ter o local de arquivo, usando o site </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wu3Y_v8JeE8?si=8CT42dguR_4wl_c2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+  </body>
+</html>
