@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário no HTML</title>
+</head>
+<body>
+    <h1>Trabalhando com Tags para Formulários</h1>
+    <hr>
+    <p>Elementos para Formulários são voltados à interação do usuário. Entrada de dados, seleção de opções, processamento para manipulação de dados entre outros.</p>
+    <p>Formulário do HTML são um <i>INTERFACE</i>.</p>
+    <p>Para que o Formulário funcione é necessário conbiná-los com alguma linguagem de programação</p>
+
+    <form action="#" method="post"> <!-- <form> define o formulário; action = destino do formulário; method = define a forma de envio do formulário -->
+    
+
+    <div> <!-- <div> container genérico de bloco, util para agrupar elementos sem significado semântico -->
+        <label for="nome">Nome:</label> <!-- <label> é o titulo do campo, vinculado ao campo via for/id -->
+        
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome real" required> <!-- <input> é um campo de entrada de dados; type define qual o tipo de dado a ser recebido (text é campo de texto livre); id identificador unico do campo para label e scripts; name é on nome usado no envio do formulário; placeholder dica textual dento do campo; required é a forma de dizer que o campo é obrigatório -->
+        
+    </div>
+
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+    </p>
+
+    <p>
+        <label for="celular">Celular:</label>
+        <input type="cel" name="celular" id="celular" placeholder="1199999-9999">
+    </p>
+
+    <p>
+        <label for="numero">Número:</label>
+        <input type="number" name="numer" id="numero" placeholder="Digite apenas números">
+    </p>
+
+    <p> Escolha um instrumento</p>
+    <p>
+        <input type="radio" name="corda" id="instrumento-violao" value="violao"> <!-- type radio é a opção unica no grupo, id significao controle; o neme = grupo de opções; o value é o valor enviando ao selecionar -->
+        <label for="instrumento-violao">Violão</label>
+        <input type="radio" name="corda" id="instrumento-violino" value="violino">
+        <label for="instrumento-violino">Violino</label>
+    </p>
+    
+    <p>Interesse</p>
+    <p>
+        <input type="checkbox" name="interesses" id="interesses-html5" value="htnl5"> <!-- type checkbox é uma opção de multipla escolha; id siginifica o controle; name: array de opções; o value é o valor enviado ao selecionar -->
+        <label for="interesses-html5">HTML5</label>
+
+        <input type="checkbox" name="interesses" id="interesses-javascript" value="javascript">
+        <label for="interesses-javascript">Javascript</label>
+        
+        <input type="checkbox" name="interesses" id="interesses-css3" value="css3">
+        <label for="interesses-css3">CSS3</label>
+    </p>
+
+    <p>
+        <label for="nascimento">Nascimento</label> <br>
+            <input type="date" name="nascimento" id="nascimento" value="nascimento" required>
+    </p>
+
+    <p>
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" id="cor">
+    </p>
+    
+    <p>
+        <label for="idade">Idade</label>
+        <input type="number" name="numero" id="numero" min="1" max="150">
+    </p>
+    
+    <p>
+        <label for="assunto">Assunto</label> 
+        <select name="assunto" id="assunto"> <!--Campo de seleção-->
+            <option value="">Selecione um assunto</option> <!--Valor vazio é como se fosse o placeholder-->
+            <option value="elogios">Elogios</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="outros">Outros</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem"
+        cols="50" rows="10" placeholder="Digite sua mensagem"></textarea>
+    </p>
+
+    <p>
+        <button type="submit">Enviar</button>
+    </p>
+    </form>
+</body>
+</html>
