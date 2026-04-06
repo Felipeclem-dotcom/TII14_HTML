@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Id e Classe</title>
+
+    <style>
+        /* Seletor de ID: #unico - aplica o estilo ao elemento único com id="unico" 
+         */
+        #unico {
+            height: 30px; /*Altura de 30 pixels*/
+            width: 100px; /*Largura de 150pixels*/
+            background-color: yellow; /*Cor de fundo Amarelo*/
+            padding: 5px; /* Espaçamento interno: 5 pixels em todos os lados*/
+        }
+
+        /* Seletor de Classe .categori - aplica estilos a elementos com class="categoria" */
+        
+        .categoria {
+            height: 30px; /*Altura de 30 pixels*/
+            width: 150px; /*Largura de 150pixels*/
+            background-color: blue; /*Cor de fundo Amarelo*/
+            padding: 5px; /* Espaçamento interno: 5 pixels em todos os lados*/
+            color: white;
+        }
+        /* Seletor ID: #meio aplicar estilos a um elemento único com o id="meio" */
+
+        #meio {
+            width: 500px; /*Largura*/
+            background-color: cadetblue; /*Cor de Fundo*/
+        }
+
+        .arredondamento {
+            border-radius: 10px; /*Arredondamento as bordas: rio de 10 pixels */
+            border-bottom: solid 3px red; /*Borda inferior: solida, 3 pixels de espesura, vermelho */
+        }
+        </style>
+
+
+</head>
+<body>
+    <h1>Trabalhando com ID e Classe</h1>
+    <hr>
+    <h2>Seletores de Id</h2>
+
+    <p class="arredondamento">É usado um seletor de id em um elemento HTML para deixar ele único e específico</p>
+    <p>Deve ser usado uma única vez na página web</p>
+    <p id="unico" class="arredondamento">Usando um ID</p>
+
+    <hr>
+
+    <h2>Seletores de classe</h2>
+    <p>O seletor classe seleciona elementos com um atributo de classe específica</p>
+    <p>Pode ser usado mais de uma vez na página</p>
+    <h3>Exemplo:</h3>
+    <p class="categoria">Usando uma Classe</p>
+    <p class="categoria" id="meio">Usando uma Classe</p>
+    <p class="categoria">Usando uma Classe</p>
+
+</body>
+</html>
