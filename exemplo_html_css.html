@@ -17,6 +17,73 @@
             padding: 0;
             background-color: #f5de83;
             background-image: url(img/textura01.jpg);
+            font-family: Arial, Helvetica, sans-serif; /*fonte reserva, caso não carregue a fonte importada*/
+            font-family: "Playwrite NO", cursive; /*Fonte importada do google fonts usada como principal*/
+            font-optical-sizing: auto; /*Ajuste de renderização da font para melhorar a legibilidade*/
+            font-weight: 500; /*Peso da fonte*/
+            font-style: normal; /*Estilo normal, sem itálico*/
+        }
+
+        h1 {
+          background-color: black;
+          color: white;
+          text-align: center;
+          padding: 20px; /*Espaçamento interno ao redor do conteudo*/
+          border-radius: 15px; /*cantos arredondados*/
+          border-bottom: solid red 5px; /* Borda inferior vermlho e grossa*/
+        }
+
+        hr {
+          width: 90%;
+          height: 5px;
+          background-color: black;
+          border: none;
+          border-radius: 5px;
+          border-bottom: solid rgb(255, 0, 0);
+        }
+
+        h2 {
+          border-bottom-style: solid;
+          border-bottom-color: black;
+          border-bottom-width: 3px;
+          display: inline;
+          padding-bottom: 4px;
+          color: white;
+          text-shadow: black 2px 2px 5px, rgb(151, 16, 16) -2px -2px 5px;
+          margin: 20px;
+          text-transform: lowercase;
+        }
+
+        p {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 18px;
+          letter-spacing: 3px;
+          word-spacing: 10px;
+          text-align: justify;
+        }
+
+        div {
+          align-items: center;
+          justify-content: center;
+          width: 670px;
+          margin-left: 280px;
+        }
+
+        .link {
+          text-decoration: none;
+          color: black;
+        }
+
+        li {
+          list-style: square;
+          background-color: #ffa500;
+          width: 21%;
+        }
+
+        img {
+          border-radius: 20px;
+          display: flex;
         }
     </style>
 
@@ -27,8 +94,8 @@
     <hr />
     <h2>Tecnologias Web</h2>
     <p>
-      Algumas das principais tecnologias e <b>linguagens Web</b> são o HTML,
-      <i>CSS</i>, Javascript e PHP.
+      Algumas das principais tecnologias e <b>linguagens Web</b> são o <a class="link" href="https://www.w3schools.com/html/default.asp" target="_blank"><strong>HTML</strong></a>,
+      <a class="link" href="https://www.w3schools.com/css/default.asp" target="_blank"><i><strong>CSS</strong></i></a>, <a class="link" href="https://www.w3schools.com/js/default.asp" target="_blank"><strong>Javascript</strong></a> e <a class="link" href="https://www.w3schools.com/php/default.asp" target="_blank"><strong>PHP</strong></a>.
     </p>
     <p>
       São linguagens usadas para estruturar, estilizar e implementar
@@ -36,7 +103,7 @@
     </p>
     <p>
       Também é muito comum o uso de sistemas gerenciadores de banco de dados,
-      como o MySQL, na implementação de sites.
+      como o <a class="link" href="https://www.w3schools.com/mysql/" target="_blank"><strong>MySQL</strong></a>, na implementação de sites.
     </p>
     <hr />
     <p>
@@ -53,8 +120,10 @@
     </div>
     <hr />
     <p>Desenvolvido de acordo com os Padrões Web.</p>
+    <div class="imag">
     <p><img src="img/chapeleiro_mini.jpg" alt="chapeleiro maluco" /></p>
     <p><img src="img/chapeleiro_mini.jpg" alt="chapeleiro maluco" /></p>
     <p><img src="img/chapeleiro_mini.jpg" alt="chapeleiro maluco" /></p>
+    </div>
   </body>
 </html>
