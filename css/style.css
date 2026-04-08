@@ -1,0 +1,73 @@
+/* Customização do pseudo*/
+
+h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+
+a {
+    background-color: #0b2555;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: solid crimson 2px;
+    width: 30px;
+}
+
+a:link {
+    color: #6cff00;
+}
+
+a:hover {
+    background-color: chartreuse;
+    color: blue;
+}
+
+a:active {
+    background-color: #fc0e0e;
+    color: black;
+}
+
+button:link {
+    color: rgb(2, 255, 2);
+}
+button:visited {
+    color: black;
+    background-color: yellow;
+}
+
+button:hover {
+    background-color: aquamarine;
+    color: blue;
+}
+
+p::first-line {
+    color: rgb(255, 0, 0);
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    color: darkmagenta;
+    font-size: xx-large;
+}
+
+h3::before {
+    content: url(/img/lupa.webp);
+}
+
+h3::after {
+    content: url(/img/lupa.webp);
+}
+
+::marker {
+    color: #6cff00;
+}
+
+::selection {
+    color: darkorange;
+    background-color: #000;
+}
