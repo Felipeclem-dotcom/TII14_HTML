@@ -42,9 +42,121 @@ body {
 
 .bloco h2 {
     margin-top: 10px;
-    color: indigo;
+    color: #333;
 }
 
 .bloco p {
     margin-bottom: 20px;
+}
+
+.botao-transition {
+    background-color: blueviolet;
+    color: #FFF;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.botao-transition:hover {
+   background-color:rgba(245, 40, 145, 0.4);
+}
+
+.caixa-transform {
+    width: 100px;
+    height: 100px;
+    background-color: #00bcd4;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.caixa-transform:hover {
+    transform: rotate(20deg) scale(1.15);
+}
+
+.area-animacao {
+    width: 100%;
+    height: 120px;
+    border: dashed 2px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.caixa-movendo {
+    width: 80px;
+    height: 80px;
+    background-color: chartreuse;
+    border-radius: 50%;
+    border: solid green;
+    position: absolute;
+    top: 20px;
+    
+    animation: moverCaixa 3s infinite alternate;
+}
+
+@keyframes moverCaixa {
+    from {
+        left: 0;
+    } to {
+        left: calc(100% - 80px);
+    }
+}
+
+.texto-aparecendo {
+    opacity: 0;
+    
+    animation: aparecerTexto 2s forwards;
+}
+
+@keyframes aparecerTexto {
+    from {
+        opacity: 0;
+        transform: translatey(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+.bola {
+    width: 80px;
+    height: 80px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    animation: subirDescer 7s infinite alternate ease-in-out;
+}
+
+@keyframes subirDescer {
+    from {
+        transform: translatey(0);
+    }
+
+    to {
+        transform: translatey(-100px);
+    }
+}
+
+.card {
+    background-color: aliceblue;
+    border: solid 2px #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    transition: 0.4s;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card:hover {
+    transform: translatey(-8px) scale(1.03);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    border-color: rgba(156, 39, 176, 0.3);
 }
